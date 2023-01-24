@@ -10,11 +10,17 @@ public class Program {
 		
 		List<Integer> luckyNumbers = NumberGenerator.generateLuckyNumbers();
 		
-		for(int i = 0; i < 6; i++) {
+		System.out.println("Welcome! Your lucky numbers will be generated.\n");
+		
+		System.out.print("Here are your lucky numbers: ");
+		
+		for(int i = 0; i < luckyNumbers.size(); i++) {
 			System.out.print(luckyNumbers.get(i));
 			if (i < 5) System.out.print("-");
 		}
+		
+		System.out.println();
+		System.out.println("\nGood luck and bet in moderation.");
 
 	}
-
 }
